@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy Corner Z</title>
+    <style>
+        /* 1. Background Settings */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #fff5f5 0%, #f7ebe1 100%);
+            background-attachment: fixed;
+            color: #4A3B32;
+            min-height: 100vh;
+        }
+
+        /* 2. Header Settings */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid rgba(74, 59, 50, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #4A3B32;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 15px 0 0 0;
+            font-size: 1.1rem;
+            color: #7A6353;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* 3. Products Grid Layout (3 items per row) */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* This forces 3 columns */
+            gap: 30px; /* Space between product cards */
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto; /* Centers the whole container */
+        }
+
+        /* 4. Single Product Card Styling */
+        .product-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px); /* Gentle lift effect on hover */
+        }
+
+        .product-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover; /* Keeps image beautifully cropped */
+        }
+
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-title {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+            color: #4A3B32;
+            font-weight: 600;
+        }
+
+        .product-price {
+            margin: 0 0 20px 0;
+            font-size: 1.1rem;
+            color: #b38269; /* Soft premium color for price */
+            font-weight: bold;
+        }
+
+        /* 5. Buy Button Styling */
+        .buy-button {
+            display: block;
+            text-align: center;
+            background-color: #4A3B32;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: auto; /* Pushes button to the bottom */
+            transition: background 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #634f43;
+        }
+
+        /* Responsive Design: 1 column on Mobile Screens */
+        @media (max-width: 768px) {
+            .products-container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dreamy Corner Z</h1>
+        <p>“Where Dreams Meet Aesthetic Living.”</p>
+        <p>Aesthetic Living | Home Decor | Fashion Finds</p>
+    </header>
+
+    <div class="products-container">
+
+        <div class="product-card">
+            <img class="product-image" src="product1.jpg" alt="Product 1">
+            
+            <div class="product-info">
+                <h3 class="product-title">Hand Crafted Swan Pair</h3>
+                <p class="product-price">₹1,500</p>
+                <a href="https://link.amazon/B00JN4XL9" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="product3.jpg" alt="Product 3">
+            
+            <div class="product-info">
+                <h3 class="product-title">Lucky Deer Family</h3>
+                <p class="product-price">₹820</p>
+                <a href="https://link.amazon/B07oZ2zVm" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+        </div>
+  <div class="product-card">
+            <img class="product-image" src="product2.jpg" alt="Product 2">
+            
+            <div class="product-info">
+                <h3 class="product-title"> Resin Golden Reindeer Sculptures</h3>
+                <p class="product-price">₹999</p>
+                <a href="https://link.amazon/B06JpghX6" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+        </div>
+  <div class="product-card">
+            <img class="product-image" src="product2.jpg" alt="Product 2">
+            
+            <div class="product-info">
+                <h3 class="product-title">Aluminium Pair of Swans </h3>
+                <p class="product-price">₹1297</p>
+                <a href="https://link.amazon/B06mxCU0p" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+        </div>
+  <div class="product-card">
+            <img class="product-image" src="product2.jpg" alt="Product 2">
+            
+            <div class="product-info">
+                <h3 class="product-title">Crafted Swan Pair</h3>
+                <p class="product-price">₹1508</p>
+                <a href="https://link.amazon/B06HXI8oO" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+        </div>
+  <div class="product-card">
+            <img class="product-image" src="product2.jpg" alt="Product 2">
+            
+            <div class="product-info">
+                <h3 class="product-title">Lucky Deer Family</h3>
+                <p class="product-price">₹820</p>
+                <a href="https://link.amazon/B07oZ2zVm" target="_blank" class="buy-button">View on Amazon</a>
+            </div>
+        </div>
+ 
